@@ -26,7 +26,7 @@ import { AppComponent } from './app.component';
     MatSidenavModule,
     MatListModule
   ],
-  providers: [NewsApiService],
+  providers: [NewsApiServices],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
