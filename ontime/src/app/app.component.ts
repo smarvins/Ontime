@@ -21,6 +21,11 @@ export class AppComponent {
     //Load news sources
     this.newsapi.initSources().subscribe(data => this.mSources = data['sources']);
   }
-  
+
+  searchArticles(source) {
+    //This will let the user select a specific news source from the list
+    console.log('selected source is :'+source);
+    this.newsapi.getArticlesById(source).subscribe(data => this.mArticles = data['articles']);
+  }
 
 }
