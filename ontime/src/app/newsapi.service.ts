@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
+import { HttpClient  } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
-export class NewsapiService {
+export class NewsApiService {
 
   api_key = '78607a355fd24d618fdf7e30ace4a375';
 

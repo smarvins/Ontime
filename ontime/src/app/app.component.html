@@ -1,27 +1,4 @@
 
 
-<mat-drawer-container class="example-container" autosize>
-
-  <!--This is the navigation bar-->
-  <mat-drawer #drawer class="example-sidenav" mode="side">
-    <mat-list class="list-nav">
-        <mat-list-item class="list-item" *ngFor="let source of mSources" (click)="searchArticles(source.id);sidenav.close();">
-
-          <div mat-card-avatar [ngStyle]="{'background-image': 'url(../assets/images/'+ source.id +'.png)'}" class="example-header-image"></div>
-
-          <span class="source-name"> {{source.name}}</span>
-
-        </mat-list-item>
-  </mat-drawer>
-
-  <!--This is the button to toggle the navigation bar-->
-  <div class="example-sidenav-content">
-    <button type="button" mat-button (click)="drawer.toggle()">
-      open list of news sources
-    </button>
-  </div>
-
-</mat-drawer-container>
-
 
 <router-outlet></router-outlet>
