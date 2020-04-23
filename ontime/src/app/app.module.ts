@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 
 /* These are modules that will take charge on importing the material and animation packages */
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    FontAwesomeModule,
   ],
   providers: [NewsApiService],
   bootstrap: [AppComponent]

@@ -1,11 +1,77 @@
 /* You can add global styles to this file, and also import other style files */
-body{
-  padding: 2em 23em;
-  background:lightgray;
+html, body{
   font-family: 'Questrial', sans-serif;
+  color: white;
+  width: 100%;
+	height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-html, body { height: 100%; }
+body{
+  background: linear-gradient(149deg, #e7d39e, #ff9966, #ed4264, #e7575a);
+	background-size: 600% 600%;
+	-webkit-animation: Gradient 60s ease infinite;
+	-moz-animation: Gradient 60s ease infinite;
+	animation: Gradient 60s ease infinite;
+}
+  @-webkit-keyframes Gradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+  @-moz-keyframes Gradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+  @keyframes Gradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+hr {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  border: 0;
+  border-top: 6px solid white;
+  border-radius: 10px;
+}
+.lead{
+  background-color: rgba(0,0,0, 0.3);
+  border: 3px solid white;
+  border-radius: 10px;
+  width: 90%;
+  height: 100%;
+  padding: 4%;
+  margin: auto;
+  color: white;
+  font-size: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.lead span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.lead span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.lead:hover span {
+  padding-right: 25px;
+}
+
+.lead:hover span:after {
+  opacity: 1;
+  right: 0;
+}

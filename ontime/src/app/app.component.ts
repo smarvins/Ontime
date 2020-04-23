@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NewsApiService } from './newsapi.service';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,7 @@ import { NewsApiService } from './newsapi.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  faCoffee = faCoffee;
   title = 'ontime';
   mArticles:Array<any>;
   mSources:Array<any>;
